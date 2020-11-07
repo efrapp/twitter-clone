@@ -5,7 +5,8 @@ Rails.application.routes.draw do
   }
 
   devise_scope :user do
-    root to: 'users/registrations#new'
+    # if I use users/registrations#new I get a too many redirections error
+    root to: 'users/sessions#new'
   end
 
   resources :users, only: :show
