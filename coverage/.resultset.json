@@ -563,11 +563,21 @@
           null
         ]
       },
+      "/Users/efrain/Documents/Interviews/koombea/twitter-clone-project/twitter-clone/spec/factories/relationships.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/efrain/Documents/Interviews/koombea/twitter-clone-project/twitter-clone/spec/factories/tweets.rb": {
         "lines": [
           1,
           1,
-          5,
+          1,
           1,
           null,
           null
@@ -577,11 +587,11 @@
         "lines": [
           1,
           1,
-          8,
-          8,
-          8,
-          8,
-          8,
+          7,
+          7,
+          7,
+          7,
+          7,
           null,
           null
         ]
@@ -613,6 +623,12 @@
           1,
           null,
           null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
           1,
           null,
           1,
@@ -657,7 +673,7 @@
           null,
           1,
           1,
-          3,
+          0,
           null,
           1,
           0,
@@ -691,7 +707,7 @@
           null,
           null,
           1,
-          7,
+          3,
           null,
           null,
           1,
@@ -708,11 +724,11 @@
           null,
           null,
           1,
-          7,
+          3,
           null,
           null,
           1,
-          7,
+          3,
           null,
           null,
           null
@@ -737,125 +753,15 @@
           null
         ]
       },
-      "/Users/efrain/Documents/Interviews/koombea/twitter-clone-project/twitter-clone/app/models/tweet.rb": {
+      "/Users/efrain/Documents/Interviews/koombea/twitter-clone-project/twitter-clone/app/models/relationship.rb": {
         "lines": [
           1,
           1,
-          null,
           1,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/efrain/Documents/Interviews/koombea/twitter-clone-project/twitter-clone/spec/system/tweets_spec.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          4,
-          null,
-          1,
-          3,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/efrain/Documents/Interviews/koombea/twitter-clone-project/twitter-clone/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/efrain/Documents/Interviews/koombea/twitter-clone-project/twitter-clone/app/controllers/users_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          null,
-          null
-        ]
-      },
-      "/Users/efrain/Documents/Interviews/koombea/twitter-clone-project/twitter-clone/app/controllers/tweets_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          1,
-          3,
-          null,
-          null,
-          1,
-          3,
-          null,
-          3,
-          1,
-          null,
-          2,
-          null,
-          null,
-          null,
-          1,
-          null,
-          1,
-          3,
-          null,
           null
         ]
       }
     },
-    "timestamp": 1604756515
+    "timestamp": 1604771770
   }
 }
