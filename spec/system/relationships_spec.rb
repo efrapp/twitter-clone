@@ -6,6 +6,7 @@ RSpec.describe 'Relationships', type: :system do
   before do
     sign_in user1
     create_list(:relationship, 10, following: user1)
+    create_list(:relationship, 12, follower: user1)
   end
 
   describe 'followers counter' do
@@ -19,10 +20,29 @@ RSpec.describe 'Relationships', type: :system do
 
     context 'with 0 followers' do
       it do
-        Relationship.destroy_all
+        Relationship.where(following: user1).destroy_all
         visit user_path(user1)
 
         expect(page).to have_content('Followers: 0')
+      end
+    end
+  end
+
+  describe 'followings counter' do
+    context 'following 10 users' do
+      it do
+        visit user_path(user1)
+
+        expect(page).to have_content('Followings: 12')
+      end
+    end
+
+    context 'following 0 users' do
+      it do
+        Relationship.where(follower: user1).destroy_all
+        visit user_path(user1)
+
+        expect(page).to have_content('Followings: 0')
       end
     end
   end
