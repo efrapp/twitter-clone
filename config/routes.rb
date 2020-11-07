@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'tweets/new'
   devise_for :users, controllers: {
     registrations: 'users/registrations',
     sessions: 'users/sessions'
@@ -10,5 +11,6 @@ Rails.application.routes.draw do
   end
 
   resources :users, only: :show
+  resources :tweets, only: %i[new create]
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end
