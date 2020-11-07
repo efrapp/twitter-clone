@@ -3,5 +3,5 @@ class Tweet < ApplicationRecord
 
   validates :message, presence: true
   validates :message, length: { maximum: 280,
-                                too_long: '%<count> characters is the maximum allowed' }
+                                too_long: '%{count} characters is the maximum allowed' }
 end
