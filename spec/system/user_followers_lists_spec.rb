@@ -42,7 +42,6 @@ RSpec.describe 'UserFollowersLists', type: :system do
   end
 
   describe 'follow button' do
-    
     context "I don't follow any of my followers" do
       it do
         expect(page).to have_button('Follow', count: 10)
