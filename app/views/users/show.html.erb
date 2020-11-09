@@ -5,5 +5,4 @@
 
 <% if user_signed_in? && current_user == @user %>
   <%= link_to 'Create Tweet', new_tweet_path %>
-  <%= link_to 'Logout', destroy_user_session_path, method: :delete %>
 <% end %>
