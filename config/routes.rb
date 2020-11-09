@@ -9,11 +9,12 @@ Rails.application.routes.draw do
     root to: 'users/sessions#new'
   end
 
-  resources :users, only: :show
-  resources :tweets, only: %i[new create]
-
-  namespace :users do
-    get 'followings/index'
+  resources :users, only: :show do
+    get 'followings/index', to: 'users/followings#index'
+    get 'followers/index', to: 'users/followers#index'
   end
+  resources :tweets, only: %i[new create]
+  resources :relationships, only: :create
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

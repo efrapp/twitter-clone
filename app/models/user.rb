@@ -15,4 +15,8 @@ class User < ApplicationRecord
   scope :full_name_asc, -> { order(:full_name) }
 
   validates :username, presence: true
+
+  def already_follow?(user:)
+    user.follower_relationships.where(follower: self).present?
+  end
 end

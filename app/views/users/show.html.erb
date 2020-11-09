@@ -1,6 +1,6 @@
 <div>
-  <p>Followers: <%= @followers.size %></p>
-  <p class="followings-count">Followings: <%= link_to @followings.size, users_followings_index_path %></p>
+  <p class="followers-count">Followers: <%= link_to @followers.size, user_followers_index_path(@user) %></p>
+  <p class="followings-count">Followings: <%= link_to @followings.size, user_followings_index_path(@user) %></p>
 </div>
 
 <% if user_signed_in? %>
