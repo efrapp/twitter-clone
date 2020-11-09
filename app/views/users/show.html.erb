@@ -1,0 +1,8 @@
+<div>
+  <p class="followers-count">Followers: <%= link_to @followers.size, user_followers_index_path(@user) %></p>
+  <p class="followings-count">Followings: <%= link_to @followings.size, user_followings_index_path(@user) %></p>
+</div>
+
+<% if user_signed_in? && current_user == @user %>
+  <%= link_to 'Create Tweet', new_tweet_path %>
+<% end %>

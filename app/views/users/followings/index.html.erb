@@ -1,0 +1,20 @@
+<h1> Following Users </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th> Users </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @followings.each do |f| %>
+      <tr>
+        <td><%= "#{f.full_name} (@#{f.username})" %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div>
+  <%= paginate @followings %>
+</div>
