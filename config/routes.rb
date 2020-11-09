@@ -13,6 +13,7 @@ Rails.application.routes.draw do
     get 'followings/index', to: 'users/followings#index'
     get 'followers/index', to: 'users/followers#index'
   end
+  resources :users, only: :index
   resources :tweets, only: %i[new create]
   resources :relationships, only: :create
 

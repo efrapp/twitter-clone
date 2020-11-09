@@ -1,0 +1,22 @@
+<h1> People you may follow </h1>
+
+<table>
+  <thead>
+    <tr>
+      <th> Users </th>
+      <th> Actions </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @users.each do |u| %>
+      <tr>
+        <td><%= "#{u.full_name} (@#{u.username})" %></td>
+        <td><%= follow_user(user: u) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<div>
+  <%= paginate @users %>
+</div>
