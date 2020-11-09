@@ -7,6 +7,11 @@ class UsersController < ApplicationController
     @followings = @user.followings
   end
 
+  def index
+    @users = User.all.page(params[:page])
+    @user = current_user
+  end
+
   private
 
   def set_user
