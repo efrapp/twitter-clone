@@ -6,7 +6,7 @@ class RelationshipsController < ApplicationController
     if new_follower_relationship.save
       redirect_to user, notice: "You are now following to #{user.full_name}"
     else
-      redirect_to users_followers_index_path, notice: new_follower_relationship.errors.messages.to_sentences
+      redirect_to user_followers_index_path(user), notice: new_follower_relationship.errors.messages.to_sentences
     end
   end
 end
